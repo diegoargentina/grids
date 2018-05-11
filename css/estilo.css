@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.contenedor{
+	margin: 30px;
+	display: grid;
+}
+
+.hijo{
+	background: grey;
+	
+}
+
+.g1-uno{
+	grid-area: chico1;
+}
+
+.g1-dos{
+	grid-area: chico2;
+}
+
+.g1-tres{
+	grid-area: grande1;
+}
+
+.g1-cuatro{
+	grid-area: chico3;
+}
+
+.g1-cinco{
+	grid-area: chico4;
+}
+
+.g1-seis{
+	grid-area: chico5;
+}
+
+.g1-siete{
+	grid-area: chico6;
+}
+
+.g1-ocho{
+	grid-area: grande2;
+}
+
+.g1-nueve{
+	grid-area: chico7;
+}
+
+.g1-diez{
+	grid-area: chico8;
+}
+
+.g1-once{
+	grid-area: chico9;
+}
+
+.g1-doce{
+	grid-area: chico10;
+}
+
+.g1-trece{
+	grid-area: chico11;
+}
+
+.g1-catorce{
+	grid-area: chico12;
+}
+
+
+.grid1{
+	grid-template-columns: repeat(5, 100px);
+	grid-template-rows: repeat(4, 100px);
+	grid-template-areas: 
+		"chico1 chico2 grande1 grande1 chico3"
+		"chico4 chico5 grande1 grande1 chico6"
+		"grande2 grande2 chico7 chico8 chico9"
+		"grande2 grande2 chico10 chico11 chico12";
+	grid-gap: 10px 10px;
+}
+
+
+/* --- SEGUNDO GRID --- */
+
+.grid2{
+	grid-template-columns: 175px 268px 144px;
+	grid-template-rows: 150px 100px;
+	grid-gap: 13px 10px;
+}
+
+.g2-uno{
+	grid-column-start: 1;
+	grid-column-end: span 2;
+}
+
+/* --- TERCER GRID --- */
+
+.grid3{
+	grid-template-columns: 100px 100px 210px 100px 100px;
+	grid-template-rows: repeat(3, 85px);
+	grid-gap: 10px 10px;
+}
+
+.g3-dos{
+	grid-area: 1/2/3/4;
+}
+
+.g3-tres{
+	grid-column: 4 / span 2;
+	
+}
+
+.g3-cinco{
+	grid-column: 4 / span 2;
+}
+
